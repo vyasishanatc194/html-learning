@@ -1,0 +1,32 @@
+.btn.back-to-top-btn01 {
+  display: inline-block;
+  background-color: #296ae0;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 24px;
+  position: fixed;
+  bottom: 30px;
+  color: #fff;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  font-size: 24px;
+  padding: 4px 0 0 0;
+}
+
+.btn.back-to-top-btn01:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+.btn.back-to-top-btn01:active {
+  background-color: #555;
+}
+
+.btn.back-to-top-btn01.show {
+  opacity: 1;
+  visibility: visible;
+}

@@ -1,0 +1,39 @@
+.cd-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  background-color: #296ae0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  z-index: 999;
+}
+
+.js {
+  .cd-top {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s, visibility .3s, background-color .3s;
+  }
+
+  .cd-top--is-visible { // back-to-top button visible
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .cd-top--fade-out { // reduce button opacity if user keeps scrolling
+    opacity: .8;
+  }
+
+  .cd-top:hover {
+    background-color: #296ae0;
+    color: #fff;
+    opacity: 1;
+  }
+}
