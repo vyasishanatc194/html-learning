@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Page Indicator Loader</title>
+  <meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
+  <meta name="theme-color" content="#191919">
+  <meta name="msapplication-navbutton-color" content="#191919">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#191919">
+  <link href='../assets/images/favicon.png' rel='shortcut icon'>
+  <link href="../assets/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="../assets/fonts/gilroy/gilroy-style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="../assets/fonts/proxima-nova/proxima-nova-font.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="../assets/css/all.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
+  <link href="../assets/css/feather.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="../assets/css/header.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="../assets/css/footer.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="../assets/css/custom-forms-style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="../assets/css/home-style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="../assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <!-- <link href="../assets/css/loader/loader-style1.css" media="all" rel="stylesheet" type="text/css" /> -->
+  <!-- <link href="../assets/css/loader/loader-style2.css" media="all" rel="stylesheet" type="text/css" /> -->
+  <!-- <link href="../assets/css/loader/loader-style3.css" media="all" rel="stylesheet" type="text/css" /> -->
+  <!-- <link href="../assets/css/loader/loader-style4.css" media="all" rel="stylesheet" type="text/css" /> -->
+  <!-- <link href="../assets/css/loader/loader-style5.css" media="all" rel="stylesheet" type="text/css" /> -->
+  <link href="../assets/css/loader/loader-style6.css" media="all" rel="stylesheet" type="text/css" />
+  <script src="../assets/js/modernizr.js"></script>
+</head>
+
+<body>
+
+  <!-- Loader 01 -->
+  <div class="o-page-loader loader-active01" style="display: none;">
+    <div class="o-page-loader--content">
+        <div class="o-page-loader--spinner"></div>
+        <div class="o-page-loader--message">
+            <span>Loading...</span>
+        </div>
+    </div>
+  </div>
+  <!-- End of loader 01 -->
+
+  <!-- Loader 02 -->
+  <div class="page-loader loader-active02" style="display: none;">
+    <div class="page-loader--content">
+      <div class="sk-cube-grid">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+      </div>
+    </div>
+  </div>
+  <!-- End of loader 02 -->
+
+  <!-- Loader 03 -->
+  <div class="page-loader loader-active03" style="display: none;">
+    <div class="page-loader--content">
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+    </div>
+  </div>
+  <!-- End of loader 03 -->
+
+  <!-- Loader 04 -->
+  <div class="page-loader loader-active04" style="display: none;">
+    <div class="page-loader--content">
+      <h1 class="title-animation-letter" id="title-animation-letter"" style="display: none;">Welcome to Blooksy</h1>
+    </div>
+  </div>
+  <!-- End of loader 04 -->
+
+  <!-- Loader 05 -->
+  <div class="page-loader loader-active05" style="display: none;">
+    <div class="page-loader--content">
+      <svg width="137px" height="143px" viewBox="0 0 37 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <path d="M28.3890658,20.7943102 C29.9547505,21.3250294 31.3237792,21.9818102 32.5301884,22.9587874 C35.1510085,25.0804036 36.0863854,27.9344376 36.2048832,31.17422 C36.4179273,36.7612688 33.1579751,40.0817306 28.2340101,41.6133787 C25.9808224,42.2968479 23.6374944,42.6368302 21.2829751,42.6218713 C14.7908041,42.6382593 8.29863323,42.6281743 1.80772293,42.6218713 C0.520634289,42.6218713 -2.13162821e-14,42.1113219 -2.13162821e-14,40.8456637 C-2.13162821e-14,27.8394712 -2.13162821e-14,14.8345393 -2.13162821e-14,1.83086808 C-2.13162821e-14,0.577816066 0.542064756,0.0382725416 1.80394108,0.0344906944 C2.95992569,0.0344906944 4.11717091,0.0723091658 5.26937367,0.0181026902 C5.85051752,-0.00837023974 5.84547505,0.270225832 5.84547505,0.690010864 C5.83791136,7.58137675 5.83581033,14.4727426 5.83917197,21.3641085 C5.83917197,21.4901701 5.83917197,21.6162317 5.83917197,21.7422932 C5.83917197,21.9515555 5.80009289,22.1885512 6.02700372,22.3020066 C6.25391454,22.415462 6.42031582,22.2238484 6.56780786,22.0788776 C7.7746373,20.9409619 8.97936571,19.8013653 10.1819931,18.6600878 C10.7707006,18.1028957 10.828689,18.1091988 11.4035297,18.6600878 C12.5733811,19.7753125 13.7461739,20.8867554 14.9219082,21.9944164 C15.0971338,22.159557 15.247147,22.4507593 15.5446523,22.3020066 C15.8421576,22.153254 15.7110536,21.8532274 15.7110536,21.6174923 C15.7169365,16.0279222 15.7169365,10.4391926 15.7110536,4.85130333 L15.7110536,0.565209909 C15.7110536,0.2916563 15.660629,0.0256663845 16.1031051,0.0344906944 C19.2949841,0.0924790172 22.4956874,-0.138213658 25.6762208,0.142903646 C29.0319798,0.439148338 31.3414278,2.401927 32.9335855,5.24713666 C35.3464039,9.55592116 34.7740844,14.8971499 31.567078,18.5113352 C30.7098593,19.4832699 29.6370754,20.1753479 28.3890658,20.7943102 Z M14.663482,9.79291692 C14.663482,12.7948631 14.663482,15.7963891 14.663482,18.7974949 C14.663482,19.0496181 14.7706343,19.3786388 14.440353,19.5210884 C14.1100717,19.6635379 13.9411492,19.38116 13.7482749,19.1983707 C12.9074443,18.4104859 12.0615711,17.6251223 11.2446921,16.815807 C10.9232351,16.4993925 10.6938031,16.4767014 10.3622611,16.815807 C9.57689756,17.6024312 8.76253981,18.3600613 7.9431396,19.1126489 C7.72631369,19.3118262 7.52335456,19.6660592 7.16155786,19.5147853 C6.79976115,19.3635114 6.87791932,18.9891085 6.87791932,18.6802577 C6.87791932,12.6772057 6.87413747,6.67415365 6.86657378,0.671101629 C6.86657378,0.17694027 7.00398089,0.0218845373 7.50696656,0.0268085769 C9.71052282,0.0533999301 11.9191215,0.049618083 14.118896,0.0268085769 C14.5676752,0.0268085769 14.6823912,0.169376576 14.67987,0.600507149 C14.6559183,3.66254271 14.663482,6.72709951 14.663482,9.79291692 Z" id="Path" fill="#01286A"></path>
+        <path id="blooksy-outline" fill-opacity="0" d="M28.3890658,20.7943102 C29.9547505,21.3250294 31.3237792,21.9818102 32.5301884,22.9587874 C35.1510085,25.0804036 36.0863854,27.9344376 36.2048832,31.17422 C36.4179273,36.7612688 33.1579751,40.0817306 28.2340101,41.6133787 C25.9808224,42.2968479 23.6374944,42.6368302 21.2829751,42.6218713 C14.7908041,42.6382593 8.29863323,42.6281743 1.80772293,42.6218713 C0.520634289,42.6218713 -2.13162821e-14,42.1113219 -2.13162821e-14,40.8456637 C-2.13162821e-14,27.8394712 -2.13162821e-14,14.8345393 -2.13162821e-14,1.83086808 C-2.13162821e-14,0.577816066 0.542064756,0.0382725416 1.80394108,0.0344906944 C2.95992569,0.0344906944 4.11717091,0.0723091658 5.26937367,0.0181026902 C5.85051752,-0.00837023974 5.84547505,0.270225832 5.84547505,0.690010864 C5.83791136,7.58137675 5.83581033,14.4727426 5.83917197,21.3641085 C5.83917197,21.4901701 5.83917197,21.6162317 5.83917197,21.7422932 C5.83917197,21.9515555 5.80009289,22.1885512 6.02700372,22.3020066 C6.25391454,22.415462 6.42031582,22.2238484 6.56780786,22.0788776 C7.7746373,20.9409619 8.97936571,19.8013653 10.1819931,18.6600878 C10.7707006,18.1028957 10.828689,18.1091988 11.4035297,18.6600878 C12.5733811,19.7753125 13.7461739,20.8867554 14.9219082,21.9944164 C15.0971338,22.159557 15.247147,22.4507593 15.5446523,22.3020066 C15.8421576,22.153254 15.7110536,21.8532274 15.7110536,21.6174923 C15.7169365,16.0279222 15.7169365,10.4391926 15.7110536,4.85130333 L15.7110536,0.565209909 C15.7110536,0.2916563 15.660629,0.0256663845 16.1031051,0.0344906944 C19.2949841,0.0924790172 22.4956874,-0.138213658 25.6762208,0.142903646 C29.0319798,0.439148338 31.3414278,2.401927 32.9335855,5.24713666 C35.3464039,9.55592116 34.7740844,14.8971499 31.567078,18.5113352 C30.7098593,19.4832699 29.6370754,20.1753479 28.3890658,20.7943102 Z M14.663482,9.79291692 C14.663482,12.7948631 14.663482,15.7963891 14.663482,18.7974949 C14.663482,19.0496181 14.7706343,19.3786388 14.440353,19.5210884 C14.1100717,19.6635379 13.9411492,19.38116 13.7482749,19.1983707 C12.9074443,18.4104859 12.0615711,17.6251223 11.2446921,16.815807 C10.9232351,16.4993925 10.6938031,16.4767014 10.3622611,16.815807 C9.57689756,17.6024312 8.76253981,18.3600613 7.9431396,19.1126489 C7.72631369,19.3118262 7.52335456,19.6660592 7.16155786,19.5147853 C6.79976115,19.3635114 6.87791932,18.9891085 6.87791932,18.6802577 C6.87791932,12.6772057 6.87413747,6.67415365 6.86657378,0.671101629 C6.86657378,0.17694027 7.00398089,0.0218845373 7.50696656,0.0268085769 C9.71052282,0.0533999301 11.9191215,0.049618083 14.118896,0.0268085769 C14.5676752,0.0268085769 14.6823912,0.169376576 14.67987,0.600507149 C14.6559183,3.66254271 14.663482,6.72709951 14.663482,9.79291692 Z" id="Path-Copy-10" stroke="#FFFFFF"></path>
+      </svg>
+    </div>
+  </div>
+  <!-- End of loader 05 -->
+
+  <!-- Loader 06 -->
+  <div class="page-progress">
+  </div>
+  <!-- End of Loader 06 -->
+
+  <div id="wrapper" class="wrapper landing-wrapper">
+
+    <header>
+      <div class="header-div clearfix">
+        <div class="inner-top-header-div clearfix">
+          <div class="container container-1200">
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <div class="header-container">
+
+                  <div class="logo-div">
+                    <a class="logo_link clearfix" href="index.html">
+                      <img src="../assets/images/blooksy.svg" class="img-fluid logo_img main-logo" alt="logo" />
+                    </a>
+                  </div>
+
+                  <nav class="nav-center-div">
+                    <div class="top-nav1">
+                      <div class="cd-shadow-layer"></div>
+                      <div class="nav-m-bar">
+                        <a onclick="openNav()" class="opennav" data-placement="bottom" title=""
+                          data-original-title="Menu">
+                          <i class="menu-bars menu-icon"></i>
+                        </a>
+                      </div>
+                      <div class="nav-div clearfix" id="mySidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="right-side">
+                          <ul class="nav ullist-inline" id="nav-res">
+                            <li><a href="login.html" class="nav-link">Login</a></li>
+                            <li><a href="signup.html" class="nav-link primary-nav-btn">Sign up</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!--  End of header with navigation div  -->
+    </header>
+
+    <div class="main-middle-area pt-custom-0">
+
+      <section class="main-banner-section" id="main-banner-section">
+        <div class="banner-div">
+
+          <div class="content-banner-root">
+            <div class="container container-1200">
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+
+                  <div class="content-banner">
+                    <div class="text-content">
+                      <h1>
+                        <span class="block">Start <span class="highlight-span">Writing</span> </span>
+                        <span class="block">Your Own</span>
+                        <span class="block">Book Today <span class="vline-span">|</span></span>
+                      </h1>
+                      <p>Donec rutrum congue leo eget malesuada. Nulla quis lorem ut libero malesuada feugiat. </p>
+                      <div class="button-group-div">
+                        <a href="signup.html" class="btn btn-general-primary btn-get-started min-width-280"> <span
+                            class="text">Get Started</span> </a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="block-classes-common-pattern-root">
+        <section class="easy-steps-section">
+          <div class="easy-steps-div">
+            <div class="container container-1200">
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+  
+                  <div class="header-title-div">
+                    <div class="header-title-inner">
+                      <h2> <span class="txt-span"> Easy Steps to Follow </span> </h2>
+                    </div>
+                  </div>
+  
+                  <div class="easy-steps-root">
+  
+                    <div class="row clearfix">
+  
+                      <div class="easy-steps-block-col col-lg-4 col-md-4 col-sm-12">
+                        <div class="step-box-card-div">
+                          <div class="step-box-card-inner">
+  
+                            <div class="image-thumb-div">
+                              <img src="../assets/images/home-block-banner/step01-img.png" class="img-fluid img-step-follow"
+                                alt="img" />
+                            </div>
+  
+                            <div class="step-desc-div">
+                              <div class="step-number step-number01">
+                                <div class="txt">1</div>
+                              </div>
+                              <div class="text-desc-div">
+                                <h4>Choose a Book Type</h4>
+                                <p class="text-desc">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                                  posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit
+                                  amet ligula.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+  
+                      </div>
+  
+                      <div class="easy-steps-block-col col-lg-4 col-md-4 col-sm-12">
+                        <div class="step-box-card-div">
+                          <div class="step-box-card-inner">
+  
+                            <div class="image-thumb-div">
+                              <img src="../assets/images/home-block-banner/step02-img.png" class="img-fluid img-step-follow"
+                                alt="img" />
+                            </div>
+  
+                            <div class="step-desc-div">
+                              <div class="step-number step-number02">
+                                <div class="txt">2</div>
+                              </div>
+                              <div class="text-desc-div">
+                                <h4>Create Outline</h4>
+                                <p class="text-desc">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                                  posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit
+                                  amet ligula.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+  
+                      </div>
+  
+                      <div class="easy-steps-block-col col-lg-4 col-md-4 col-sm-12">
+                        <div class="step-box-card-div">
+                          <div class="step-box-card-inner">
+  
+                            <div class="image-thumb-div">
+                              <img src="../assets/images/home-block-banner/step03-img.png" class="img-fluid img-step-follow"
+                                alt="img" />
+                            </div>
+  
+                            <div class="step-desc-div">
+                              <div class="step-number step-number03">
+                                <div class="txt">3</div>
+                              </div>
+                              <div class="text-desc-div">
+                                <h4> Start Writing the Story </h4>
+                                <p class="text-desc">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                                  posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit
+                                  amet ligula.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+  
+                      </div>
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="block-banner-classes-section01 block-banner-classes-01">
+          <div class="block-banner-classes-div01">
+
+            <div class="block-banner-classes-root">
+              <div class="container-fluid">
+                <div class="row align-items-center-row">
+
+                  <div class="col-lg-6 col-md-6 p-0">
+                    <div class="center-content-div">
+                      <div class="center-content-row">
+                        <h2>
+                          <span class="block">Write with a</span>
+                          <span class="block">Fishbone Outline</span>
+                          <span class="block">Strategy</span>
+                        </h2>
+                        <div class="desc-div">
+                          <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                            Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 col-md-6 p-0">
+                    <div class="img-thumb-div">
+                      <div class="img-thumb-inner">
+                        <img src="../assets/images/home-block-banner/home-block-banner-01.png"
+                          class="img-fluid img-responsive" alt="img" />
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="block-banner-classes-section02 block-banner-classes-02">
+          <div class="block-banner-classes-div02">
+
+            <div class="block-banner-classes-root">
+              <div class="container-fluid">
+                <div class="row align-items-center-row">
+
+                  <div class="col-lg-5 col-md-6 order-2 p-0">
+                    <div class="center-content-div">
+                      <div class="center-content-row">
+                        <h2> <span class="block">Create your Own </span> <span class="block">Cookbook</span> </h2>
+                        <div class="desc-div">
+                          <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                            Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-7 col-md-6 order-1 p-0">
+                    <div class="img-thumb-div">
+                      <div class="img-thumb-inner">
+                        <img src="../assets/images/home-block-banner/home-block-banner-02.png"
+                          class="img-fluid img-responsive" alt="img" />
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="block-banner-classes-section03 block-banner-classes-03">
+          <div class="block-banner-classes-div03">
+
+            <div class="block-banner-classes-root">
+              <div class="container-fluid">
+                <div class="row align-items-center-row">
+
+                  <div class="col-lg-6 col-md-6 p-0">
+                    <div class="center-content-div">
+                      <div class="center-content-row">
+                        <h2> <span class="block">Add Modern </span> <span class="block">Illustrations and </span> <span
+                            class="block"> Choose Layouts </span> </h2>
+                        <div class="desc-div">
+                          <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                            Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 col-md-6 p-0">
+                    <div class="img-thumb-div">
+                      <div class="img-thumb-inner">
+                        <img src="../assets/images/home-block-banner/home-block-banner-03.png"
+                          class="img-fluid img-responsive" alt="img" />
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </div>
+
+      <section class="books-are-available-section">
+        <div class="books-are-available-div">
+          <div class="container container-1200">
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+
+                <div class="books-are-available-row">
+                  <div class="books-are-available-left">
+                    <div class="content-div">
+                      <p>7+ Types of books are available for you to write!</p>
+                      <h2>What are you waiting for?</h2>
+                    </div>
+                  </div>
+                  <div class="books-are-available-right">
+                    <div class="center-btn-div">
+                      <div class="button-group-div">
+                        <a href="signup.html" class="btn btn-general-primary btn-get-started min-width-280"> <span
+                            class="text">Get Started</span> </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <footer>
+      <div class="footer-div">
+        <div class="container container-1200">
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+
+              <div class="footer-content-row">
+                <div class="row">
+
+                  <div class="col-lg-3 col-md-4">
+                    <div class="about-desc-footer-div">
+
+                      <div class="footer-logo-box-root">
+                        <div class="footer-logo-thumb">
+                          <a href="#" class="logo-link">
+                            <img src="../assets/images/blooksy-color.svg" class="img-fluid logo_img footer-logo"
+                              alt="logo" />
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="desc-div">
+                        <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur aliquet quam id dui posuere blandit.
+                          Vivamus suscipit tortor eget felis porttitor volutpat. Donec sollicitudin molestie malesuada.
+                        </p>
+                      </div>
+
+                      <div class="social-icon-div-root">
+                        <ul class="footer-social-ul">
+                          <li>
+                            <a href="#" class="social-link linkedin-link"><i class="fab fa-linkedin-in"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" class="social-link facebook-link"><i class="fab fa-facebook-f"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" class="social-link twitter-link"><i class="fab fa-twitter"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" class="social-link google-plus-link"><i class="fab fa-google-plus-g"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="col-lg-5 col-md-4">
+                    <div class="subscribe-footer-div top-footer-space">
+                      <div class="subscribe-footer-inner">
+                        <div class="title-div">
+                          <h3>Mailing List</h3>
+                          <p>Sign Up for our mailing lists and get the latest offers and promotions straight in your
+                            inbox.</p>
+                        </div>
+                        <div class="form-group-subscribe-div">
+                          <div class="form-group">
+                            <div class="input-group-row">
+                              <input type="email" class="form-control" placeholder="Your Email" />
+                              <button class="btn btn-primary-round-color">Subscribe</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4">
+                    <div class="img-footer-thumb-div">
+                      <img src="../assets/images/character/character-image-available.png"
+                        class="img-fluid img-footer-responsive" alt="img" />
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="footer-copyright-div">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12">
+                    <div class="footer-copyright-box-root">
+                      <p> &copy;<a href="#" class="link">Blooksy</a>. All rights reserved</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- end of wrapper -->
+
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/popper.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <!-- <script src="../assets/js/loader/pageloader-script1.js"></script> -->
+  <!-- <script src="../assets/js/loader/pageloader-script2.js"></script> -->
+  <!-- <script src="../assets/js/loader/pageloader-script3.js"></script> -->
+  <!-- <script src="../assets/js/anime-js/anime.min.js"></script>
+  <script src="../assets/js/loader/pageloader-script4.js"></script> -->
+  <!-- <script src="../assets/js/progressbar-js/progressbar.js"></script>
+  <script src="../assets/js/loader/pageloader-script5.js"></script> -->
+  <script src="../assets/js/page-progress/page-progress.js"></script>
+  <script src="../assets/js/loader/pageloader-script6.js"></script>
+  <script src="../assets/js/custom.js"></script>
+
+</body>
+
+</html>

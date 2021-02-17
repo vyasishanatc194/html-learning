@@ -1,0 +1,54 @@
+/* --------------------------------------------------------------------------------------- */
+/* Loader 2
+/* --------------------------------------------------------------------------------------- */
+
+.page-loader {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background: #296ae0;
+  z-index: 99999;
+  transition: opacity 0.5s, clip-path 1s;
+}
+
+.page-loader--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.title-animation-letter {
+  font-weight: 900;
+  font-size: 3.5em;
+  color: #fff;
+  display: none;
+  opacity: 0;
+}
+
+.loader-active04 .title-animation-letter {
+  display: block !important;
+  opacity: 1;
+  animation: sk-title 6s infinite ease-in-out both;
+}
+
+@keyframes sk-title {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
