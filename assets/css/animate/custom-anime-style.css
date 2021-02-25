@@ -12,6 +12,19 @@
   background: #001436;
 }
 
+.demo-animation-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
 .demo-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,6 +48,7 @@
   color: #fff;
 }
 
+/* Cube animation using css */
 .anim-object {
   width: 140px;
   height: 140px;
@@ -140,6 +154,130 @@
             transform: rotateY(0);
   }
   100% {
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
+  }
+}
+
+/* End of cube */
+.animation-cube-div {
+  width: 140px;
+  height: 140px;
+  top: 50px;
+  -webkit-transform: rotateX(-322deg) rotateZ(0deg);
+          transform: rotateX(-322deg) rotateZ(0deg);
+  margin: auto;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.animation-cube-div .face {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  float: left;
+  overflow: hidden;
+  opacity: 0.7;
+  background-color: #fff;
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
+  border: 1px solid rgba(0, 0, 0, 0.153);
+}
+
+.animation-cube-div .face .text {
+  color: #222;
+  font-size: 40px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  line-height: 140px;
+}
+
+.animation-cube-div .cube-inner-01 {
+  -webkit-transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(70px);
+          transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(70px);
+  background-color: #ffa705;
+}
+
+.animation-cube-div .cube-inner-02 {
+  -webkit-transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(70px);
+          transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(70px);
+  background-color: #7be389;
+}
+
+.animation-cube-div .cube-inner-03 {
+  -webkit-transform: translateX(0px) translateY(0px) translateZ(70px);
+          transform: translateX(0px) translateY(0px) translateZ(70px);
+  background-color: #e93434;
+}
+
+.animation-cube-div .cube-inner-04 {
+  -webkit-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(70px);
+          transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(70px);
+  background-color: #5485f7;
+}
+
+.animation-cube-div .cube-inner-05 {
+  -webkit-transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(70px);
+          transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(70px);
+  background-color: #6c6c5f;
+}
+
+.animation-cube-div .cube-inner-06 {
+  -webkit-transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(70px);
+          transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(70px);
+  background-color: #107980;
+}
+
+.ring-number-root {
+  -webkit-perspective: 1200;
+  -webkit-perspective-origin: 50% 225px;
+}
+
+.animation-ring-div {
+  -webkit-transform: rotateX(0deg) rotateZ(0deg);
+          transform: rotateX(0deg) rotateZ(0deg);
+  -webkit-animation: spin 12s infinite linear;
+          animation: spin 12s infinite linear;
+}
+
+.animation-ring-div .face {
+  height: 200px;
+  width: 200px;
+  border: 1px solid white;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+  -webkit-transition: opacity 2s, -webkit-transform 2s;
+  transition: opacity 2s, -webkit-transform 2s;
+  transition: transform 2s, opacity 2s;
+  transition: transform 2s, opacity 2s, -webkit-transform 2s;
+}
+
+.animation-ring-div .face .text {
+  font-size: 120px;
+  line-height: 200px;
+  font-weight: 400;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  to {
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  to {
     -webkit-transform: rotateY(-360deg);
             transform: rotateY(-360deg);
   }

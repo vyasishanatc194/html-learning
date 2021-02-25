@@ -44,21 +44,42 @@
               <div class="row align-items-center-row">
                 <div class="col-lg-12 col-md-12">
                   
-                  <div class="demo-wrapper">
+                  <!-- <div class="demo-wrapper">
                     <div class="square">
+                    </div>
+                  </div> -->
+
+                  <div class="demo-animation-wrapper">
+                    <div class="square-number">
+                      <div class="animation-cube-div active" id="cube-animation">
+                        <div class="face cube-inner-01"></div>
+                        <div class="face cube-inner-02"></div>
+                        <div class="face cube-inner-03"></div>
+                        <div class="face cube-inner-04"></div>
+                        <div class="face cube-inner-05"></div>
+                        <div class="face cube-inner-06"></div>
+                      </div>
                     </div>
                   </div>
 
-                  <!-- <div class="demo-animation-wrapper">
-                    <div class="square-number">
-                      <div class="anim-object active" id="cube-object">
-                        <div class="front face"><div class="text">1</div></div>
-                        <div class="right face"> <div class="text">2</div></div>
-                        <div class="back face"><div class="text">3</div></div>
-                        <div class="left face"><div class="text">4</div></div>
+                  <div class="demo-animation-wrapper">
+                    <div class="square-number ring-number-root">
+                      <div class="animation-cube-div animation-ring-div active" id="ring-animation">
+                        <div class="face ring-inner-1">  <div class="text"></div>  </div>
+                        <div class="face ring-inner-2">  <div class="text"></div>  </div>
+                        <div class="face ring-inner-3">  <div class="text"></div>  </div>
+                        <div class="face ring-inner-4">  <div class="text"></div>  </div>
+                        <div class="face ring-inner-5">  <div class="text"></div>  </div>
+                        <div class="face ring-inner-6">  <div class="text"></div>  </div>
+                        <div class="face ring-inner-7">  <div class="text"></div>  </div>
+                        <div class="face ring-inner-8">  <div class="text"></div>  </div>
+                        <div class="face ring-inner-9">  <div class="text"></div>  </div>
+                        <div class="face ring-inner-10"> <div class="text"></div>  </div>
+                        <div class="face ring-inner-11"> <div class="text"></div>  </div>
+                        <div class="face ring-inner-12"> <div class="text"></div>  </div>
                       </div>
                     </div>
-                  </div> -->
+                  </div>
                  
                 </div>
               </div>
@@ -79,35 +100,39 @@
   <script src="../assets/js/custom.js"></script>
 
   <script>
+
     anime({
-      targets: '.square',
-      translateX: 450,
-      rotateZ: 360,
-      scale: 3,
-      duration: 3000,
-      loop: true
+      targets: '#cube-animation',
+      rotateX: -25,
+      rotateZ: 0,
+      rotateY: [0, -360],
+      scale:1,
+      duration: 6000,
+      direction: 'alternate',
+      easing: 'linear',
+      loop: true,
     });
 
-    // var logEl = document.querySelector('.square-number');
+    let i;
+    function ring_function(rotate){
+      for(i = 0;i<=12;i++) {
+        $("#ring-animation > .ring-inner-"+i).css({"transform": "rotateY(" + rotate + "deg) translateZ(390px)"});
+        rotate = rotate + 30;
+        $("#ring-animation > .ring-inner-"+i+" > .text").html(i);
+        
+      }
+      return rotate;
+    }
 
-    // var battery = {
-    //   charged: '0%',
-    //   cycles: 50
-    // }
+    ring_function(0);
 
-    // anime({
-    //   targets: battery,
-    //   charged: '100%',
-    //   cycles: 150,
-    //   round: 1,
-    //   duration: 3000,
-    //   easing: 'linear',
-    //   direction: "forward",
-    //   loop: false,
-    //   update: function() {
-    //     logEl.innerHTML = JSON.stringify(battery);
-    //   }
-    // });
+    anime({
+      targets: '#ring-animation',
+      duration: 3000,
+      loop: true,
+    });
+    
+    
   </script>
 
 </body>
