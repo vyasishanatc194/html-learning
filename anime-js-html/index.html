@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Anime.js</title>
+  <meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
+  <meta name="theme-color" content="#191919">
+  <meta name="msapplication-navbutton-color" content="#191919">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#191919">
+  <link href='../assets/images/favicon.png' rel='shortcut icon'>
+  <link href="../assets/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="../assets/fonts/gilroy/gilroy-style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="../assets/fonts/proxima-nova/proxima-nova-font.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="../assets/css/all.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
+  <link href="../assets/css/feather.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="../assets/css/header.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="../assets/css/footer.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="../assets/css/custom-forms-style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="../assets/css/home-style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="../assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
+
+  <!-- anime js style -->
+  <link href="../assets/css/animate/custom-anime-style.css" media="all" rel="stylesheet" type="text/css" />
+
+  <script src="../assets/js/modernizr.js"></script>
+</head>
+
+<body>
+
+  <div id="wrapper" class="wrapper landing-wrapper">
+
+    <div class="main-middle-area pt-custom-0">
+
+      <section class="demo-exp-section">
+        <div class="demo-exp-div">
+
+          <div class="demo-exp-root">
+            <div class="container">
+              <div class="row align-items-center-row">
+                <div class="col-lg-12 col-md-12">
+                  
+                  <div class="demo-wrapper">
+                    <div class="square">
+                    </div>
+                  </div>
+
+                  <!-- <div class="demo-animation-wrapper">
+                    <div class="square-number">
+                      <div class="anim-object active" id="cube-object">
+                        <div class="front face"><div class="text">1</div></div>
+                        <div class="right face"> <div class="text">2</div></div>
+                        <div class="back face"><div class="text">3</div></div>
+                        <div class="left face"><div class="text">4</div></div>
+                      </div>
+                    </div>
+                  </div> -->
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+  </div><!-- end of wrapper -->
+
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/popper.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/anime-js/anime.min.js"></script>
+  <script src="../assets/js/custom.js"></script>
+
+  <script>
+    anime({
+      targets: '.square',
+      translateX: 450,
+      rotateZ: 360,
+      scale: 3,
+      duration: 3000,
+      loop: true
+    });
+
+    // var logEl = document.querySelector('.square-number');
+
+    // var battery = {
+    //   charged: '0%',
+    //   cycles: 50
+    // }
+
+    // anime({
+    //   targets: battery,
+    //   charged: '100%',
+    //   cycles: 150,
+    //   round: 1,
+    //   duration: 3000,
+    //   easing: 'linear',
+    //   direction: "forward",
+    //   loop: false,
+    //   update: function() {
+    //     logEl.innerHTML = JSON.stringify(battery);
+    //   }
+    // });
+  </script>
+
+</body>
+
+</html>

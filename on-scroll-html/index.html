@@ -230,7 +230,7 @@
                   <div class="col-lg-6 col-md-6 p-0">
                     <div class="center-content-div" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
                       <div class="center-content-row">
-                        <h2>
+                        <h2 class="rellax" data-rellax-speed="0">
                           <span class="block">Write with a</span>
                           <span class="block">Fishbone Outline</span>
                           <span class="block">Strategy</span>
@@ -470,8 +470,23 @@
   <script src="../assets/js/on-scroll/aos/aos.js"></script>
   <script src="../assets/js/on-scroll/aos/aos-call.js"></script>
 
+  <!-- Rellax parallax js  -->
+  <script src="../assets/js/rellax/rellax.min.js"></script>
+
   <!-- Custom JS -->
   <script src="../assets/js/custom.js"></script>
+
+  <script>
+    // Also can pass in optional settings block
+    var rellax = new Rellax('.rellax', {
+      speed: -2,
+      center: false,
+      wrapper: null,
+      round: true,
+      vertical: true,
+      horizontal: false
+    });
+  </script>
 
 </body>
 
